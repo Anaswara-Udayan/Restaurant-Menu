@@ -1,0 +1,42 @@
+.imgContainer {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.welcomeText {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	text-align: center;
+	color: #ffffff; /* Text color */
+	padding: 20px;
+}
+
+.welcomeText h1 {
+	margin: 0;
+	font-size: 2.5em;
+	width: 400px;
+	height: 150px;
+}
+
+.menuBtn {
+	display: inline-block;
+	padding: 12px 24px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+}
+
+/* Hover effect */
+.menuBtn:hover {
+	color: #281002;
+}
+
+/* Active effect */
+.menuBtn:active {
+	color: #ffffff;
+}
