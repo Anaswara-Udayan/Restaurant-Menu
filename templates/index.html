@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{% static 'css/cover.css' %}"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Foodie's Junction</title>
+	</head>
+	<body>
+		<img
+			src="{% static 'cover_img.jpg' %}"
+			alt="cover_image"
+			class="imgContainer"
+		/>
+		<div
+			class="welcomeText"
+			style="
+				font-family: Playfair Display, Arial, Helvetica, sans-serif;
+				font-style: italic;
+			"
+		>
+			<h1 class="text-center">WELCOME TO FOODIE'S JUNCTION</h1>
+			<a class="menuBtn" style="text-decoration: none" href="{% url 'menu'%}"
+				>Let's Order</a
+			>
+		</div>
+	</body>
+</html>
